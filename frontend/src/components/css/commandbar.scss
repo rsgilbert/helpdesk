@@ -1,0 +1,37 @@
+$commandBarBackgroundColor : rgb(238, 249, 253);
+
+.commandbar {
+    margin: 16px 0;
+
+
+    ul {
+        background-color: $commandBarBackgroundColor;
+        display: flex;
+        flex-direction: row;
+        
+
+        li {
+            font-weight: bold;
+            text-transform: capitalize;
+            min-width: 100px;
+            text-align: center;
+
+            &:hover {
+                background-color: darken($commandBarBackgroundColor, 55);
+                color: white;
+            }
+
+            .danger {
+                &:hover {
+                    background-color: lightcoral;
+                }
+            }
+
+            span, div, a {
+                width: 100%;
+                display: block;
+                padding: 8px;
+            }
+        }
+    }
+}
